@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    overflow: scroll;
+}
+
+
+.wrapper-header {
+  padding: 5px;
+  text-align: center;
+  max-width: 100%;
+  height: 100px;
+}
+
+.header {
+  display: inline;
+}
+
+.header img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.wrapper-nav {
+  margin-top: 7px;
+  overflow: hidden;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 6px 6px 6px 30px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown .dropbtn {
+  font-size: 13px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 6px 6px 6px 30px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  background-color: white;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 6px 6px 6px 30px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: grey;
+}
+
+.dropdown-content a:hover {;
+  color: grey;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.title h1 {
+  margin-top: 100px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 50px;
+  font-family: helvetica;
+}
+
+.main {
+  margin-left: 250px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 1px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* The Modal (background) */
+.modal {
+  align-content: center;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.1rem;
+  text-align: center;
+}
+
+.social img {
+  width: 25px;
+  height: auto;
+}
+
+.copyright {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
