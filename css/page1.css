@@ -211,8 +211,10 @@ body {
 */
 
 .footer {
-  position: relative;
-  top: 50px;
+  position: static;
+  margin-top: 50px;
+  right: 0:
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
