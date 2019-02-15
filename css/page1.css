@@ -98,20 +98,23 @@ body {
   font-family: helvetica;
 }
 
-.main {
-  margin-left: 250px;
-}
+
 
 .row {
+  display: -ms-flexbox; /* IE10 */
   display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
-  padding: 0 1px;
+  padding: 0 4px;
 }
 
 .column {
+  -ms-flex: 25%; /* IE10 */
   flex: 25%;
   max-width: 25%;
-  padding: 0 1px;
+  padding: 0 4px;
+  list-style: 0;
+  column-gap: 0;
 }
 
 .column img {
@@ -119,7 +122,8 @@ body {
   vertical-align: middle;
 }
 
-/* The Modal (background) */
+
+/* The Modal (background)
 .modal {
   align-content: center;
   display: none;
@@ -134,7 +138,7 @@ body {
   background-color: white;
 }
 
-/* Modal Content */
+
 .modal-content {
   position: relative;
   background-color: #fefefe;
@@ -144,7 +148,7 @@ body {
   max-width: 1200px;
 }
 
-/* The Close Button */
+
 .close {
   color: white;
   position: absolute;
@@ -161,12 +165,12 @@ body {
   cursor: pointer;
 }
 
-/* Hide the slides by default */
+
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
+
 .prev,
 .next {
   cursor: pointer;
@@ -184,19 +188,19 @@ body {
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -204,9 +208,13 @@ body {
   position: absolute;
   top: 0;
 }
+*/
 
 .footer {
-  position: absolute;
+  position: static;
+  margin-top: 50px;
+  right: 0:
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -226,6 +234,7 @@ body {
 
 @media screen and (max-width: 800px) {
   .column {
+    -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
   }
@@ -233,7 +242,8 @@ body {
 
 @media screen and (max-width: 600px) {
   .column {
-    flex: 100%;
-    max-width: 100%;
+    -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
   }
 }

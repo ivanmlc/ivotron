@@ -12,21 +12,31 @@
     <a href="index.html"><img src="images/Ivotron_Logo1.png"></a>
   </div>
 
-<div class="wrapper-nav">
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-  <div class="dropdown">
-    <a href="gallery.html" class="dropbtn">Gallery</a>
-    <div class="dropdown-content">
-      <a href="conventions.html">Conventions</a>
-      <a href="nconventions.html">Non-Conventions</a>
+  <div class="wrapper-nav">
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    <div class="dropdown">
+      <a href="photography.html" class="dropbtn">Photography</a>
+      <div class="dropdown-content">
+        <a href="conventions.html">Conventions</a>
+        <a href="shoots.html">Shoots</a>
+      </div>
+    </div>
+      <a href="contact.html">Contact</a>
     </div>
   </div>
-    <a href="contact.html">Contact</a>
   </div>
-</div>
-</div>
+
+<form action="mail.php" method="POST">
+  <p>Name</p>
+  <input type="text" name="name">
+  <p>Email</p>
+  <input type="text" name="email">
+  <p>Message</p>
+  <textarea name="message" rows="6" cols="25"></textarea><br />
+  <input type="submit" value="Send"><input type="reset" value="Clear">
+</form>
 
 <div>
   <footer class = "footer">
