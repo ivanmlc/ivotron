@@ -122,6 +122,40 @@ body {
   vertical-align: middle;
 }
 
+.arrowContainer a {
+  margin-top: 50px;
+  border: 1px solid #5E191B;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.arrowContainer a:hover {
+  color: #ad2d31;
+  border: 1px solid #ad2d31;
+  text-decoration: none;
+  background-color: rgba(255,255,255, 0);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: background-color 300ms ease;
+  -moz-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
+  cursor: pointer;
+}
+
+.previous {
+  margin-left: 10px;
+  background-color: white;
+  color: #5E191B;
+}
+
+.next {
+  margin-right: 10px;
+  float: right;
+  background-color: white;
+  color: #5E191B;
+}
 
 /* The Modal (background)
 .modal {
