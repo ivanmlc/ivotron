@@ -116,6 +116,10 @@ body {
   vertical-align: middle;
 }
 
+.column img:hover {
+opacity: 0.6;
+}
+
 .footer {
   position: static;
   margin-top: 50px;
