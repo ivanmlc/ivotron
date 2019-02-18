@@ -7,6 +7,8 @@
 </head>
 
 <body>
+  <div id = "pageContainer">
+    <div id = "contentWrap">
 
 <div class="wrapper-header">
   <div class="header">
@@ -71,20 +73,30 @@
   <a href="wondercon.html" class="previous"> &#8249; Previous </a>
   <a href="ala.html" class="next"> Next &#8250;</a>
 </div>
+</div>
 
-<!-- The Modal/Lightbox
+<div>
+  <footer class = "footer">
+    <a class = "social" href="https://www.instagram.com/ivotroninc"><img src="images/icons/instagram.png"></a>
+    <a class = "social" href="https://www.facebook.com/ivotronphoto"><img src="images/icons/facebook.png"></a>
+    <a class = "social" href="https://www.youtube.com/channel/UClGLmw3Vzdh46S-Dp2wtB4Q?view_as=subscriber"><img src="images/icons/youtube.png"></a>
+    <p class = "copyright"> &copy; Ivotron &#124; 2019 </p>
+  </footer>
+</div>
+
+<!-- The Modal/Lightbox -->
 <div id="myModal" class="modal">
   <span class="close cursor" onclick="closeModal()">&times;</span>
   <div class="modal-content">
 
     <div class="mySlides">
       <div class="numbertext">1 / 4</div>
-      <img src="" style="width:100%">
+      <img src="images/conventions/animeExpo/Elma_001.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">2 / 4</div>
-      <img src="" style="width:100%">
+      <img src="images/conventions/animeExpo/Jibril_001.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
@@ -123,25 +135,16 @@
     </div>
 
 
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="prevI" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="nextI" onclick="plusSlides(1)">&#10095;</a>
 
 
     <div class="caption-container">
       <p id="caption"></p>
     </div>
--->
-<div>
-  <footer class = "footer">
-    <a class = "social" href="https://www.instagram.com/ivotronphoto"><img src="images/icons/instagram.png"></a>
-    <a class = "social" href="https://www.facebook.com/ivotronphoto"><img src="images/icons/facebook.png"></a>
-    <a class = "social" href="https://www.youtube.com/channel/UClGLmw3Vzdh46S-Dp2wtB4Q?view_as=subscriber"><img src="images/icons/youtube.png"></a>
-    <p class = "copyright"> &copy; Ivotron &#124; 2019 </p>
-  </footer>
-</div>
 
     <script>
-/*
+
 // Open the Modal
 function openModal() {
   document.getElementById('myModal').style.display = "block";
@@ -178,8 +181,9 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-*/
+
 </script>
 
+</div>
 </body>
 </html>
