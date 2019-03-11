@@ -37,6 +37,7 @@ body {
 .wrapper-nav {
   margin-top: 7px;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .navbar {
@@ -96,6 +97,8 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+
 
 .footer {
   position: static;
