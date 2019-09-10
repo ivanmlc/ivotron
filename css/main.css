@@ -14,7 +14,7 @@ body {
 }
 
 #contentWrap {
-  padding-bottom: 2.5rem;
+  padding-bottom: 1.0rem;
 }
 
 .wrapper-header {
@@ -33,6 +33,23 @@ body {
   max-height: 100%;
 }
 
+#myDIV {
+  display: none;
+}
+
+.navButton {
+  width: 30px;
+  height: auto;
+  opacity: 0.7;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navButton:hover {
+  cursor: pointer;
+}
+
 .wrapper-nav {
   margin-top: 7px;
   overflow: hidden;
@@ -45,21 +62,23 @@ body {
 }
 
 .navbar a {
+  font-family: simplifica;
   display: inline-block;
   color: black;
   text-align: center;
-  padding: 6px 6px 6px 30px;
+  padding: 0px 20px 4px 20px;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 19px;
 }
 
 
 .dropdown {
+  font-family: simplifica;
   display: inline-block;
 }
 
 .dropdown .dropbtn {
-  font-size: 13px;
+  font-size: 19px;
   border: none;
   outline: none;
   color: black;
@@ -86,6 +105,7 @@ body {
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   color: grey;
+  cursor: pointer;
 }
 
 .dropdown-content a:hover {;
@@ -103,6 +123,7 @@ body {
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .splashRow {
@@ -204,15 +225,16 @@ cursor: pointer;
   cursor: pointer;
 }
 
+/* footer */
 .footer {
-  position: static;
+  position: absolute;
   margin-top: 50px;
   right: 0:
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 0.1rem;
+  padding: 1rem;
   text-align: center;
 }
 
