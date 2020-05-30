@@ -87,7 +87,7 @@ body {
 .navbar a:hover, .dropdown:hover .dropbtn {
   color: grey;
   cursor: pointer;
-  
+
 }
 
 .dropdown-content a:hover {;
@@ -136,19 +136,19 @@ opacity: 0.6;
 .overlay {
   position: absolute;
   bottom: 0;
-  left: 100%;
+  left: 0;
   right: 0;
-  background-color: #ad2d31;
+  background-color: #ae2d31;
   opacity: 0.9;
   overflow: hidden;
-  width: 0;
+  width:98.5%;
   height: 98.5%;
   transition: .5s ease;
   pointer-events: none;
 }
 
 .column:hover .overlay {
-  width: 100%;
+  width: 0;
   left: 0;
 }
 
