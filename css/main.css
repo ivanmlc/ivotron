@@ -1,5 +1,11 @@
 * {
     box-sizing: border-box;
+    font-family: openSansCondensedLight;
+}
+
+@font-face {
+   font-family: openSansCondensedLight;
+   src: url("../css/fonts/openSansCondensedLight.ttf");
 }
 
 body {
@@ -33,23 +39,6 @@ body {
   max-width: 100%;
   max-height: 100%;
 }
-
-
-
-/*
-.navButton {
-  width: 30px;
-  height: auto;
-  opacity: 0.7;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.navButton:hover {
-  cursor: pointer;
-}
-*/
 
 .wrapper-nav {
   margin-top: 7px;

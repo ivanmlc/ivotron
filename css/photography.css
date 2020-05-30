@@ -1,5 +1,11 @@
 * {
     box-sizing: border-box;
+    font-family: bebasNeueRegular;
+}
+
+@font-face {
+   font-family: bebasNeueRegular;
+   src: url("../css/fonts/bebasNeueRegular.otf");
 }
 
 body {

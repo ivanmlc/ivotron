@@ -1,11 +1,11 @@
 * {
     box-sizing: border-box;
-    font-family: PrimeLight;
+    font-family: openSansCondensedLight;
 }
 
 @font-face {
-   font-family: PrimeLight;
-   src: url("../css/fonts/primeRegular.otf");
+   font-family: openSansCondensedLight;
+   src: url("../css/fonts/openSansCondensedLight.ttf");
 }
 
 body {
