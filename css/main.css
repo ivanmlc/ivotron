@@ -4,14 +4,22 @@
 
 body {
     margin-top: 10px;
-    font-family: Arial, sans-serif;
-    overflow: scroll;
+    font-family: cambria, sans-serif;
+    overflow: hidden;
 }
 
+#pageContainer {
+  position: relative;
+  min-height: 100vh;
+}
+
+#contentWrap {
+  padding-bottom: 1.0rem;
+}
 
 .wrapper-header {
-  padding: 5px;
-  text-align: center;
+  padding: 30px 0 0 10px;
+  text-align: left;
   max-width: 100%;
   height: 100px;
 }
@@ -21,9 +29,27 @@ body {
 }
 
 .header img {
+  float: left;
   max-width: 100%;
   max-height: 100%;
 }
+
+
+
+/*
+.navButton {
+  width: 30px;
+  height: auto;
+  opacity: 0.7;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navButton:hover {
+  cursor: pointer;
+}
+*/
 
 .wrapper-nav {
   margin-top: 7px;
@@ -33,70 +59,32 @@ body {
 .navbar {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 30px 10px 0 0;
 }
 
 .navbar a {
+  font-family: ;
   display: inline-block;
-  color: black;
+  float: right;
+  color: #ae2d31;
   text-align: center;
-  padding: 6px 6px 6px 30px;
+  padding: 0px 20px 4px 20px;
   text-decoration: none;
-  font-size: 13px;
-}
-
-
-.dropdown {
-  display: inline-block;
-}
-
-.dropdown .dropbtn {
-  font-size: 13px;
-  border: none;
-  outline: none;
-  color: black;
-  padding: 6px 6px 6px 30px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 160px;
-  z-index: 1;
-  background-color: white;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 6px 6px 6px 30px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+  font-size: 19px;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   color: grey;
+  cursor: pointer;
 }
-
-.dropdown-content a:hover {;
-  color: grey;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
 
 .splash {
   max-width: 100%;
   height: auto;
-  margin-top: 60px;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .splashRow {
@@ -198,15 +186,20 @@ cursor: pointer;
   cursor: pointer;
 }
 
+/* footer */
 .footer {
+<<<<<<< HEAD
   position: static;
+=======
+  position: absolute;
+>>>>>>> master
   margin-top: 50px;
   right: 0:
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 0.1rem;
+  padding: 1rem;
   text-align: center;
 }
 

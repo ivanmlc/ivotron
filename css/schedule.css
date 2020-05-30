@@ -8,6 +8,14 @@ body {
     overflow: scroll;
 }
 
+#pageContainer {
+  position: relative;
+  min-height: 100vh;
+}
+
+#contentWrap {
+  padding-bottom: 2.5rem;
+}
 
 .wrapper-header {
   padding: 5px;
@@ -55,7 +63,6 @@ body {
   border: none;
   outline: none;
   color: black;
-  padding: 6px 6px 6px 30px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -64,7 +71,6 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  min-width: 160px;
   z-index: 1;
   background-color: white;
 }
@@ -72,14 +78,15 @@ body {
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 6px 6px 6px 30px;
+  padding-right: 30px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: center;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   color: grey;
+  cursor: pointer;
 }
 
 .dropdown-content a:hover {;
