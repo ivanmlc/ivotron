@@ -11,12 +11,11 @@
 body {
     margin-top: 10px;
     font-family: cambria, sans-serif;
-    overflow: hidden;
 }
 
 #pageContainer {
   position: relative;
-  min-height: 100vh;
+  min-height: 85vh;
 }
 
 #contentWrap {
@@ -52,7 +51,6 @@ body {
 }
 
 .navbar a {
-  font-family: ;
   display: inline-block;
   float: right;
   color: #ae2d31;
@@ -62,7 +60,7 @@ body {
   font-size: 19px;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover{
   color: grey;
   cursor: pointer;
 }
@@ -177,14 +175,7 @@ cursor: pointer;
 
 /* footer */
 .footer {
-  position: absolute;
-  margin-top: 50px;
-  right: 0:
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
+  position: relative;
   text-align: center;
 }
 
@@ -203,6 +194,56 @@ cursor: pointer;
     flex: 50%;
     max-width: 50%;
   }
+  #mobileheader {
+    padding: 5px;
+    text-align: center;
+    max-width: 100%;
+    height: 100px;
+  }
+
+  #logo{
+    display: inline;
+  }
+
+  #logo img {
+    float: inherit;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .wrapper-nav {
+    margin-top: 7px;
+    overflow: hidden;
+  }
+
+  #mobilenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #mobilenav a {
+    display: inline-block;
+    color: #ae2d31;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+  }
+
+  #blog, #work{
+    float:left;
+  }
+
+  #about, #contact{
+    float:right;
+  }
+
+  #mobilenav a:hover{
+    color: grey;
+    cursor: pointer;
+  }
+
+
 }
 
 @media screen and (max-width: 600px) {
