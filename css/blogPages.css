@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+    font-family: openSansCondensedLight;
+}
+
+@font-face {
+   font-family: openSansCondensedLight;
+   src: url("../css/fonts/openSansCondensedLight.ttf");
+}
+
+@font-face {
+   font-family: bebasneueRegular;
+   src: url("../css/fonts/bebasneueRegular.ttf");
+}
+
+@font-face {
+   font-family: itcAvantGardeBold;
+   src: url("../css/fonts/itcAvantGardeBold.otf");
+}
+
+body {
+    margin-top: 10px;
+}
+
+#pageContainer {
+  position: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  min-height: 100vh;
+}
+
+#contentWrap {
+  padding-bottom: 1.0rem;
+}
+
+.wrapper-header {
+  padding: 5px;
+  text-align: center;
+  max-width: 100%;
+  height: 100px;
+}
+
+.header {
+  display: inline;
+}
+
+.header img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.wrapper-nav {
+  margin-top: 7px;
+  overflow: hidden;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  width: 15%;
+  font-family: openSansCondensedLight;
+  display: inline-block;
+  color: #ae2d31;
+  text-align: center;
+  padding: 6px 6px 6px 27px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  color: grey;
+  cursor: pointer;
+}
+
+
+.row {
+  margin-top: 100px;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 70%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: right;
+  width: 25%;
+  margin-top: 20px;
+}
+
+
+.post img {
+  width: 100%;
+}
+
+
+/* Add a card effect for articles */
+.post {
+  width:100%;
+  padding: 5px;
+  margin-top: 20px;
+  position:inherit;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card {
+  width:100%;
+  padding: 5px 10px 5px 5px;
+  margin-top: 20px;
+  position:inherit;
+  text-align: center;
+  background-color: #fff8dc;
+}
+
+.rcard img {
+  position: relative;
+  width: 100%;
+}
+
+.rcard p {
+  font-family: openSansCondensedLight;
+  font-size: 20px;
+  color: black;
+  line-height: 1;
+}
+
+.rcard h4 {
+  padding-top: 10px;
+  font-family: itcAvantGardeBold;
+  font-size: 15px;
+  color: black;
+  line-height: 1;
+}
+
+.rcard a {
+  text-decoration: none;
+}
+
+.rcard:hover a {
+  text-decoration: underline;
+  color: #e95d5d;
+}
+
+.rcard {
+  font-family: openSansCondensedBold;
+  width:100%;
+  padding-bottom: 5px;
+  position:relative;
+  text-align: center;
+  background-color: #fff8dc;
+}
+
+.social img {
+  width: 25px;
+  height: auto;
+}
+
+h1 {
+  font-family: itcAvantGardeBold;
+  font-size: 100px;
+  color: #e95d5d;
+  position: absolute;
+  top: 29%;
+  left: 19%;
+}
+
+h6 {
+  text-align: right;
+  font-family: openSansCondensedLight;
+  color: #e95d5d;
+  position: relative;
+}
+
+
+.text {
+  font-family: openSansCondensedLight;
+  color: #e95d5d;
+  font-size: 20px;
+  left: 3%;
+  margin: 30px;
+
+}
+
+.divide {
+  border-top: 1px solid #ffdb5c;
+  width: 100%;
+}
+
+#navLine {
+  border-top: 2px solid #ffdb5c;
+  width: 100%;
+}
+
+.description {
+  background-color: #ae2d31;
+  float:right;
+  width: 20%;
+  left: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* footer */
+.footer {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footerLogo {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 2.5%;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  #mobileheader {
+    padding: 5px;
+    text-align: center;
+    max-width: 100%;
+    height: 100px;
+  }
+
+  #logo{
+    display: inline;
+  }
+
+  #logo img {
+    float: inherit;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .wrapper-nav {
+    margin-top: 7px;
+    overflow: hidden;
+  }
+
+  #mobilenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #mobilenav a {
+    display: inline-block;
+    color: #ae2d31;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+  }
+
+  #blog, #work{
+    float:left;
+  }
+
+  #about, #contact{
+    float:right;
+  }
+
+  #mobilenav a:hover{
+    color: grey;
+    cursor: pointer;
+  }
+
+  .leftcolumn, .rightcolumn {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+  }
+
+  body {
+      margin-top: 10px;
+      background-image: url("../images/nutsandbolts_logo.jpg");
+      background-size: 75%;
+      background-repeat:no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+  }
+
+  h2 {
+    font-family: itcAvantGardeBold;
+    color: black;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: 3%;
+  }
+
+
+  .text {
+    font-family: openSansCondensedLight;
+    color: black;
+    font-size: 10px;
+    position: absolute;
+    top: 30%;
+    left: 3%;
+}
