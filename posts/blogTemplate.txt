@@ -18,8 +18,7 @@
     <div class = "wrapper-nav">
       <div class="navbar" id="mobilenav">
         <a href="../contact.html" id="contact">Contact</a>
-        <a href="../about.html" id="about">About</a>
-     <!-- <a href="aftermidnight.html">AFTERmidnight</a> -->
+        <a href="aftermidnight.html">AFTERmidnight</a>
         <a href="../nutsandbolts.html" id="blog">Nuts & Bolts</a>
         <a href="../photography.html" id="work">Work</a>
       </div>
@@ -35,7 +34,7 @@
       <img src = "../images/games/controlTitlePage.jpg">
       <div class = "divide"></div>
       <p class = "text">
-      
+
       <!-- Place text here -->
 
       </p>
@@ -47,7 +46,7 @@
 <div class="rightcolumn">
   <div class= "rcard">
     <img src = "../images/lacomic.jpg">
-    <a href = "../about.html"><h4>ABOUT</h4>
+    <a href = "../index.html#aboutScoll"><h4>ABOUT</h4>
     <p>Ivan Lopez</p></a>
   </div>
   <div class ="rcard">

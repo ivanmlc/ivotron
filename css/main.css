@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: openSansCondensedLight;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -90,7 +91,6 @@ body {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .splashRow {
@@ -112,7 +112,7 @@ body {
 
 
 .splashRow .leftButton {
-  font-family: Arial, sans-serif;
+  font-family: openSansCondensedLight;
   text-decoration: none;
   position: absolute;
   top: 50%;
@@ -130,7 +130,7 @@ body {
 }
 
 .splashRow .rightButton {
-  font-family: Arial, sans-serif;
+  font-family: openSansCondensedLight;
   text-decoration: none;
   position: absolute;
   top: 50%;
@@ -197,10 +197,94 @@ cursor: pointer;
   width: 100%;
 }
 
+/* ABOUT PAGE */
+.meetTeam h2 {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.meetTeam p {
+  text-align: center;
+  font-size: 20px;
+}
+
+
+
+.main {
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bio {
+  position:relative;
+  background-color: #ae2d31;
+  text-align: center;
+  width: 100%;
+  opacity: 0.9;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+}
+
+h1 {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 10px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  text-align: center;
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  text-decoration: none;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #ad2d31;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
 /* footer */
 .footer {
   position: relative;
   text-align: center;
+  margin-top: 20px;
 }
 
 .social img {

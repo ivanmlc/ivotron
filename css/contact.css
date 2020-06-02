@@ -8,21 +8,36 @@
    src: url("../css/fonts/openSansCondensedLight.ttf");
 }
 
+@font-face {
+   font-family: openSansCondensedBold;
+   src: url("../css/fonts/openSansCondensedBold.ttf");
+}
+
+@font-face {
+   font-family: bebasneueRegular;
+   src: url("../css/fonts/bebasneueRegular.ttf");
+}
+
+@font-face {
+   font-family: itcAvantGardeBold;
+   src: url("../css/fonts/itcAvantGardeBold.otf");
+}
+
 body {
     margin-top: 10px;
-    font-family: Arial, sans-serif;
-    overflow: scroll;
 }
 
 #pageContainer {
-  position: relative;
+  position: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
   min-height: 100vh;
 }
 
 #contentWrap {
-  padding-bottom: 2.5rem;
+  padding-bottom: 1.0rem;
 }
-
 
 
 .wrapper-header {
@@ -69,6 +84,27 @@ body {
   cursor: pointer;
 }
 
+.divide {
+  border-top: 1px solid #ffdb5c;
+  width: 100%;
+}
+
+
+.contactInfo {
+  background-color: #ffdb5c;
+  text-align: center;
+  color: #ae2d31;
+  position: block;
+  margin-left: auto;
+  margin-top: 20%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+p {
+  font-family: openSansCondensedLight;
+  font-size: 30px;
+}
 
 
 .footer {
@@ -84,7 +120,7 @@ body {
 }
 
 .social img {
-  width: 25px;
+  width: 2%;
   height: auto;
 }
 

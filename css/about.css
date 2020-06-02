@@ -8,19 +8,35 @@
    src: url("../css/fonts/openSansCondensedLight.ttf");
 }
 
+@font-face {
+   font-family: openSansCondensedBold;
+   src: url("../css/fonts/openSansCondensedBold.ttf");
+}
+
+@font-face {
+   font-family: bebasneueRegular;
+   src: url("../css/fonts/bebasneueRegular.ttf");
+}
+
+@font-face {
+   font-family: itcAvantGardeBold;
+   src: url("../css/fonts/itcAvantGardeBold.otf");
+}
+
 body {
     margin-top: 10px;
-    font-family: Arial, sans-serif;
-    overflow: scroll;
 }
 
 #pageContainer {
-  position: relative;
+  position: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
   min-height: 100vh;
 }
 
 #contentWrap {
-  padding-bottom: 1rem;
+  padding-bottom: 1.0rem;
 }
 
 
