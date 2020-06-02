@@ -18,6 +18,16 @@
    src: url("../css/fonts/itcAvantGardeBold.otf");
 }
 
+@font-face {
+   font-family: economicaRegular;
+   src: url("../css/fonts/economicaRegular.ttf");
+}
+
+@font-face {
+   font-family: staatlichesRegular;
+   src: url("../css/fonts/staatlichesRegular.ttf");
+}
+
 body {
     margin-top: 10px;
 }
@@ -62,8 +72,8 @@ body {
 }
 
 .navbar a {
-  width: 15%;
   font-family: openSansCondensedLight;
+  width: 15%;
   display: inline-block;
   color: #ae2d31;
   text-align: center;
@@ -102,8 +112,6 @@ body {
   width: 100%;
 }
 
-
-/* Add a card effect for articles */
 .post {
   width:100%;
   padding: 5px;
@@ -112,18 +120,6 @@ body {
   text-align: center;
 }
 
-.card img {
-  width: 100%;
-}
-
-.card {
-  width:100%;
-  padding: 5px 10px 5px 5px;
-  margin-top: 20px;
-  position:inherit;
-  text-align: center;
-  background-color: #fff8dc;
-}
 
 .rcard img {
   position: relative;
@@ -139,7 +135,7 @@ body {
 
 .rcard h4 {
   padding-top: 10px;
-  font-family: itcAvantGardeBold;
+  font-family: staatlichesRegular;
   font-size: 15px;
   color: black;
   line-height: 1;
@@ -163,11 +159,6 @@ body {
   background-color: #fff8dc;
 }
 
-.social img {
-  width: 25px;
-  height: auto;
-}
-
 h1 {
   font-family: itcAvantGardeBold;
   font-size: 100px;
@@ -177,21 +168,44 @@ h1 {
   left: 19%;
 }
 
-h6 {
-  text-align: right;
+h2 {
   font-family: openSansCondensedLight;
-  color: #e95d5d;
+  color: black;
+  font-size: 20px;
+  text-align: left;
   position: relative;
+  left: 3%;
+  line-height: 1;
 }
 
 
+h6 {
+  text-align: left;
+  font-family: staatlichesRegular;
+  color: black;
+  position: relative;
+  left: 3%;
+  line-height: 1;
+}
+
+.social img {
+  width: 25px;
+  height: auto;
+}
+
 .text {
   font-family: openSansCondensedLight;
-  color: #e95d5d;
+  color: #de1d1d;
   font-size: 20px;
   left: 3%;
   margin: 30px;
+}
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .divide {
@@ -202,20 +216,6 @@ h6 {
 #navLine {
   border-top: 2px solid #ffdb5c;
   width: 100%;
-}
-
-.description {
-  background-color: #ae2d31;
-  float:right;
-  width: 20%;
-  left: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* footer */
@@ -233,51 +233,46 @@ h6 {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  #mobileheader {
-    padding: 5px;
-    text-align: center;
+  #pageContainer {
+    width: 90%;
+    min-height: 100vh;
+  }
+
+  .wrapper-header {
     max-width: 100%;
     height: 100px;
   }
 
-  #logo{
+  .header{
     display: inline;
   }
 
-  #logo img {
+  .header img {
     float: inherit;
     max-width: 100%;
     max-height: 100%;
   }
 
   .wrapper-nav {
-    margin-top: 7px;
     overflow: hidden;
   }
 
-  #mobilenav {
+  .navbar {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
   }
 
-  #mobilenav a {
-    display: inline-block;
+  .navbar a {
+    display: inline;
     color: #ae2d31;
     text-align: center;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 20px;
+    width: 30%;
   }
 
-  #blog, #work{
-    float:left;
-  }
 
-  #about, #contact{
-    float:right;
-  }
 
-  #mobilenav a:hover{
+  .navbar a:hover{
     color: grey;
     cursor: pointer;
   }
@@ -288,30 +283,23 @@ h6 {
     padding: 0;
   }
 
-  body {
-      margin-top: 10px;
-      background-image: url("../images/nutsandbolts_logo.jpg");
-      background-size: 75%;
-      background-repeat:no-repeat;
-      background-attachment: fixed;
-      background-position: center;
-  }
-
   h2 {
-    font-family: itcAvantGardeBold;
-    color: black;
-    font-size: 10px;
-    position: absolute;
-    top: 0;
-    left: 3%;
-  }
+      font-family: openSansCondensedLight;
+      color: black;
+      font-size: 20px;
+      text-align: left;
+      position: relative;
+      left: 3%;
+      line-height: 1;
+    }
+
 
 
   .text {
     font-family: openSansCondensedLight;
-    color: black;
-    font-size: 10px;
-    position: absolute;
+    color: #de1d1d;
+    font-size: 14px;
     top: 30%;
     left: 3%;
+}
 }

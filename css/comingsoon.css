@@ -1,0 +1,54 @@
+@font-face {
+   font-family: itcAvantGardeBold;
+   src: url("../css/fonts/itcAvantGardeBold.otf");
+}
+
+@font-face {
+   font-family: openSansCondensedLight;
+   src: url("../css/fonts/openSansCondensedLight.ttf");
+}
+
+@font-face {
+   font-family: primeLight;
+   src: url("../css/fonts/primeLight.otf");
+}
+
+#pageContainer {
+  position: block;
+  margin-top: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+
+}
+
+#contentWrap {
+  text-align: center;
+}
+
+strong {
+  font-family: primeLight;
+}
+
+h1 {
+  font-family: itcAvantGardeBold;
+  font-size: 100px;
+  color: #e95d5d;
+}
+
+h2 {
+  font-family: openSansCondensedLight;
+  font-size: 100px;
+  color: #e95d5d;
+}
+
+a {
+  text-decoration: none;
+  color: #ad2d31;
+  font-family: openSansCondensedLight;
+  font-size: 50px;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ffdb5c;
+}

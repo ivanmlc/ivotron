@@ -78,6 +78,7 @@ body {
   display: inline-block;
   color: #ae2d31;
   text-align: center;
+  padding: 6px 6px 6px 27px;
   text-decoration: none;
   font-size: 18px;
 }
@@ -111,7 +112,6 @@ body {
   width: 100%;
 }
 
-/* Add a card effect for articles */
 .lcard {
   width:100%;
   padding: 5px;
@@ -222,15 +222,8 @@ p {
   position: absolute;
   top: 30%;
   left: 3%;
-
 }
 
-.description {
-  background-color: #ae2d31;
-  float:right;
-  width: 100%;
-  left: 20px;
-}
 
 /* Clear floats after the columns */
 .row:after {
@@ -241,6 +234,11 @@ p {
 
 .divide {
   border-top: 1px solid #ffdb5c;
+  width: 100%;
+}
+
+#navLine {
+  border-top: 2px solid #ffdb5c;
   width: 100%;
 }
 
@@ -260,51 +258,46 @@ p {
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  #mobileheader {
-    padding: 5px;
-    text-align: center;
+  #pageContainer {
+    width: 90%;
+    min-height: 100vh;
+  }
+
+  .wrapper-header {
     max-width: 100%;
     height: 100px;
   }
 
-  #logo{
+  .header{
     display: inline;
   }
 
-  #logo img {
+  .header img {
     float: inherit;
     max-width: 100%;
     max-height: 100%;
   }
 
   .wrapper-nav {
-    margin-top: 7px;
     overflow: hidden;
   }
 
   .navbar {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
   }
 
   .navbar a {
-    display: inline-block;
+    display: inline;
     color: #ae2d31;
     text-align: center;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 20px;
+    width: 30%;
   }
 
-  .leftNav {
-    float:left;
-  }
 
-  .rightNav {
-    float:right;
-  }
 
-  #mobilenav a:hover{
+  .navbar a:hover{
     color: grey;
     cursor: pointer;
   }
@@ -315,30 +308,68 @@ p {
     padding: 0;
   }
 
-  body {
-      margin-top: 10px;
-      background-image: url("../images/nutsandbolts_logo.jpg");
-      background-size: 75%;
-      background-repeat:no-repeat;
-      background-attachment: fixed;
-      background-position: center;
+  .overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    right: 0;
+    background-color: #ffdb5c;
+    opacity: 0.7;
+    overflow: hidden;
+    width:0;
+    height: 0;
+    pointer-events: none;
+    transition: .5s ease;
+    box-shadow: -10px 10px #807654
+    ;
+  }
+
+  .lcard:hover .overlay {
+    width: 40%;
+    height: 30%;
+    bottom:
+    left: 0;
+    padding: 20px;
   }
 
   h2 {
     font-family: itcAvantGardeBold;
     color: black;
-    font-size: 10px;
+    font-size: 20px;
     position: absolute;
+    left: 3%;
+  }
+
+  h3 {
+    font-family: itcAvantGardeBold;
+    color: black;
+    font-size: 20px;
+    position: relative;
     top: 0;
     left: 3%;
+  }
+
+
+  h4 {
+    font-family: itcAvantGardeBold;
+    color: black;
+    font-size: 10px;
+    position: relative;
   }
 
 
   .text {
     font-family: openSansCondensedLight;
     color: black;
-    font-size: 10px;
-    position: absolute;
-    top: 30%;
+    font-size: 14px;
+    top: 45%;
     left: 3%;
+}
+
+.divide {
+  padding-bottom: 10px;
+  border-top: 1px solid #ffdb5c;
+  width: 100%;
+}
+
 }
