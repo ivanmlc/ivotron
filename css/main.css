@@ -32,7 +32,7 @@ body {
   position: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 95%;
   min-height: 100vh;
 }
 
@@ -299,8 +299,57 @@ h1 {
 
 @media screen and (max-width: 800px) {
   .leftHero, .rightHero, .leftButton, .rightButton {
-    flex: 100%;
+    flex: 50%;
+    max-width: 50%;
+  }
+  #mobileheader {
+    padding: 5px;
+    text-align: center;
     max-width: 100%;
+    height: 100px;
+  }
+
+  #logo{
+    display: inline;
+  }
+
+  #logo img {
+    float: inherit;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .wrapper-nav {
+    margin-top: 7px;
+    overflow: hidden;
+  }
+
+  #mobilenav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #mobilenav a {
+    display: inline-block;
+    color: #ae2d31;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    width: 25%;
+  }
+
+  #blog, #work{
+    float:left;
+  }
+
+  #about, #contact{
+    float:right;
+  }
+
+  #mobilenav a:hover{
+    color: grey;
+    cursor: pointer;
   }
 
 
@@ -311,10 +360,7 @@ h1 {
     flex: 100%;
     max-width: 100%;
   }
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
+
     #pageContainer {
       width: 88%;
       min-height: 100vh;
@@ -348,7 +394,7 @@ h1 {
       color: #ae2d31;
       text-align: center;
       text-decoration: none;
-      font-size: 15px;
+      font-size: 13px;
       width: 25%;
     }
 
