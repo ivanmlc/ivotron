@@ -303,3 +303,119 @@ h6 {
     left: 3%;
 }
 }
+
+@media screen and (max-width: 500px) {
+  #pageContainer {
+    width: 88%;
+    min-height: 100vh;
+  }
+
+  .wrapper-header {
+    max-width: 100%;
+    height: 100px;
+  }
+
+  .header{
+    display: inline;
+  }
+
+  .header img {
+    float: inherit;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .wrapper-nav {
+    overflow: hidden;
+  }
+
+  .navbar {
+    list-style-type: none;
+  }
+
+  .navbar a {
+    display: inline;
+    color: #ae2d31;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    width: 25%;
+  }
+
+
+
+  .navbar a:hover{
+    color: grey;
+    cursor: pointer;
+  }
+
+  .leftcolumn, .rightcolumn {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    right: 0;
+    background-color: #ffdb5c;
+    opacity: 0.7;
+    overflow: hidden;
+    width:0;
+    height: 0;
+    pointer-events: none;
+    transition: .5s ease;
+    box-shadow: -10px 10px #807654
+    ;
+  }
+
+  .lcard:hover .overlay {
+    width: 40%;
+    height: 30%;
+    bottom:
+    left: 0;
+    padding: 20px;
+  }
+
+  h2 {
+    font-family: itcAvantGardeBold;
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    left: 3%;
+  }
+
+  h3 {
+    font-family: itcAvantGardeBold;
+    color: black;
+    font-size: 20px;
+    position: relative;
+    top: 0;
+    left: 3%;
+  }
+
+
+  h4 {
+    font-family: itcAvantGardeBold;
+    color: black;
+    font-size: 10px;
+    position: relative;
+  }
+
+
+  .text {
+    font-family: openSansCondensedLight;
+    color: black;
+    font-size: 14px;
+    top: 45%;
+    left: 3%;
+}
+
+.divide {
+  padding-bottom: 10px;
+  border-top: 1px solid #ffdb5c;
+  width: 100%;
+}
+}
