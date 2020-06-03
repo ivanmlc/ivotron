@@ -163,7 +163,8 @@ p {
     color: #ae2d31;
     text-align: center;
     text-decoration: none;
-    font-size: 19px;
+    font-size: 17px;
+    width: 25%
   }
 
   #blog, #work{
@@ -214,7 +215,7 @@ p {
     color: #ae2d31;
     text-align: center;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 13px;
     width: 25%;
   }
 
