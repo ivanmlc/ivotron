@@ -355,61 +355,23 @@ h6 {
     padding: 0;
   }
 
-  .overlay {
-    position: absolute;
-    bottom: 20px;
-    left: 15px;
-    right: 0;
-    background-color: #ffdb5c;
-    opacity: 0.7;
-    overflow: hidden;
-    width:0;
-    height: 0;
-    pointer-events: none;
-    transition: .5s ease;
-    box-shadow: -10px 10px #807654
-    ;
-  }
-
-  .lcard:hover .overlay {
-    width: 40%;
-    height: 30%;
-    bottom:
-    left: 0;
-    padding: 20px;
-  }
-
   h2 {
-    font-family: itcAvantGardeBold;
-    color: black;
-    font-size: 20px;
-    position: absolute;
-    left: 3%;
-  }
+      font-family: openSansCondensedLight;
+      color: black;
+      font-size: 20px;
+      text-align: left;
+      position: relative;
+      left: 3%;
+      line-height: 1;
+    }
 
-  h3 {
-    font-family: itcAvantGardeBold;
-    color: black;
-    font-size: 20px;
-    position: relative;
-    top: 0;
-    left: 3%;
-  }
-
-
-  h4 {
-    font-family: itcAvantGardeBold;
-    color: black;
-    font-size: 10px;
-    position: relative;
-  }
 
 
   .text {
     font-family: openSansCondensedLight;
-    color: black;
+    color: #de1d1d;
     font-size: 14px;
-    top: 45%;
+    top: 30%;
     left: 3%;
 }
 
