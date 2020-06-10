@@ -218,6 +218,51 @@ h6 {
   width: 100%;
 }
 
+.display {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #fff8dc;
+  position: block;
+  text-align: left;
+  float:left;
+}
+
+.display img {
+  width: 20%;
+  float: left;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-right: 5px;
+  padding-left: 10px;
+}
+
+.display p {
+  color: gray;
+  line-height: 1.5;
+  padding-top: 100px;
+  font-family: itcAvantGardeBold;
+  font-size: 15px;
+}
+
+.dev, .pub {
+  text-decoration: none;
+  color: grey;
+  font-size: 15px;
+  font-family: itcAvantGardeBold;
+}
+
+.dev:hover, .pub:hover {
+  color: #ae2d31;
+}
+
+#gameLink {
+  color: #ae2d31;
+  text-decoration: none;
+}
+
+#gameLink:hover {
+  text-decoration: underline;
+}
 /* footer */
 .footer {
   margin-top: 50px;
@@ -301,6 +346,52 @@ h6 {
     font-size: 14px;
     top: 30%;
     left: 3%;
+}
+
+.display {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #fff8dc;
+  position: block;
+  text-align: left;
+  float:left;
+}
+
+.display img {
+  width: 40%;
+  float: left;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-right: 5px;
+  padding-left: 10px;
+}
+
+.display p {
+  color: gray;
+  line-height: 1.5;
+  padding-top: 135px;
+  font-family: itcAvantGardeBold;
+  font-size: 15px;
+}
+
+.dev, .pub {
+  text-decoration: none;
+  color: grey;
+  font-size: 15px;
+  font-family: itcAvantGardeBold;
+}
+
+.dev:hover, .pub:hover {
+  color: #ae2d31;
+}
+
+#gameLink {
+  color: #ae2d31;
+  text-decoration: none;
+}
+
+#gameLink:hover {
+  text-decoration: underline;
 }
 }
 

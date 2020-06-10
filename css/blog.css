@@ -142,6 +142,17 @@ body {
   padding: 10px;
 }
 
+.rating {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  direction:ltr;
+}
+
+.rating > span {
+  width: 6%;
+  display: inline-block;
+}
+
 .rcard img {
   position: relative;
   width: 100%;
